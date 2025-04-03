@@ -1,0 +1,96 @@
+" Basic settings
+set clipboard+=unnamed
+set clipboard+=ideaput
+set number
+set relativenumber
+set showmode
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set scrolloff=8
+set showcmd
+set visualbell
+
+" Enable plugins
+set easymotion
+set highlightedyank
+set surround
+
+" Configure highlightedyank
+let g:highlightedyank_highlight_duration = "100"
+let g:highlightedyank_highlight_color = "rgba(169, 220, 118, 0.4)"
+
+" Set leader key to space
+let mapleader = " "
+
+" jk to escape in insert mode
+inoremap jk <Esc>
+
+" Move 5 lines with J and K in normal and visual modes
+nnoremap J 5j
+nnoremap K 5k
+vnoremap J 5j
+vnoremap K 5k
+
+" File explorer mapping
+nnoremap <leader>e :NERDTree<CR>
+
+" Indentation in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" Comment toggle in visual mode
+vnoremap <leader>c :action CommentByLineComment<CR>
+
+" Additional key mappings similar to your VSCode setup
+" Moving lines up and down
+nnoremap <A-j> :action MoveLineDown<CR>
+nnoremap <A-k> :action MoveLineUp<CR>
+
+" Copying lines
+nnoremap <S-A-j> :action EditorDuplicateLines<CR>
+nnoremap <S-A-k> :action EditorDuplicateLinesUpward<CR>
+
+" Multiple cursors
+nnoremap <C-S-j> :action EditorCloneCaretBelow<CR>
+nnoremap <C-S-k> :action EditorCloneCaretAbove<CR>
+
+" Tab navigation
+nnoremap <C-Tab> :action NextTab<CR>
+nnoremap <C-S-Tab> :action PreviousTab<CR>
+
+" File operations in NERDTree
+" nnoremap <Leader>a :action NewFile<CR>
+" nnoremap <Leader>f :action NewDir<CR>
+" nnoremap r :action RenameFile<CR>
+" nnoremap x :action CutElement<CR>
+" nnoremap y :action CopyElement<CR>
+" nnoremap p :action PasteElement<CR>
+
+" Quick open
+nnoremap <C-e> :action GotoFile<CR>
+
+" Find and replace
+nnoremap <C-f> :action FindInPath<CR>
+
+" Insert line after
+nnoremap <S-Enter> :action EditorStartNewLineBefore<CR>
+
+" System clipboard integration
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+" Make sure IdeaVim uses the IDE's features for certain operations
+set ideajoin
+set idearefactormode=keep
+
+" easymotion settings
+let g:EasyMotion_do_mapping = 0
+nmap <leader><leader> <Plug>(easymotion-s)
+
+map gh <Action>(ShowHoverInfo)
+nnoremap r r
+
+set commentary
+
