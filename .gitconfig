@@ -1,5 +1,0 @@
-[user]
-	email = levanbao2105@gmail.com
-	name = lvb2104
-[core]
-	sshCommand = ssh -i ~/.ssh/id_rsa
