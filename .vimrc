@@ -52,4 +52,10 @@ vnoremap y "+y
 nnoremap p "+p
 vnoremap p "+p
 
+" Delete to system clipboard
+nnoremap d "+d
+vnoremap d "+d
+nnoremap dd "+dd
+vnoremap x "+x
+
 set commentary
