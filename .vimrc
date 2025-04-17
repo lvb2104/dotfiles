@@ -1,6 +1,4 @@
 " Basic settings
-set clipboard+=unnamed
-set clipboard+=ideaput
 set number
 set relativenumber
 set showmode
@@ -11,11 +9,6 @@ set smartcase
 set scrolloff=8
 set showcmd
 set visualbell
-
-" Enable plugins
-set easymotion
-set highlightedyank
-set surround
 
 " Yank + flash highlight using visual mode
 vnoremap y y:call HighlightLastYank()<CR>
@@ -38,12 +31,6 @@ vnoremap K 5k
 vnoremap < <gv
 vnoremap > >gv
 
-" Make sure IdeaVim uses the IDE's features for certain operations
-set ideajoin
-set idearefactormode=keep
-
-nnoremap r r
-
 " Yank to system clipboard
 nnoremap y "+y
 vnoremap y "+y
@@ -57,5 +44,3 @@ nnoremap d "+d
 vnoremap d "+d
 nnoremap dd "+dd
 vnoremap x "+x
-
-set commentary
