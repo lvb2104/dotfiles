@@ -89,7 +89,7 @@ set idearefactormode=keep
 let g:EasyMotion_do_mapping = 0
 nmap <leader><leader> <Plug>(easymotion-s)
 
-map gh <Action>(ShowHoverInfo)
+map <C-k><C-i> <Action>(ShowHoverInfo)
 nnoremap r r
 
 set commentary
