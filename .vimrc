@@ -8,6 +8,7 @@
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 "               
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use visual studio 2022 must install select next occurrence and vsvim
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -116,12 +117,13 @@ vnoremap d "+d
 nnoremap dd "+dd
 vnoremap x "+x
 
-" Move line up/down
+" Move line up/down with Alt + j/k
 nmap <A-j> :m .+1<CR>==
 nmap <A-k> :m .-2<CR>==
 vmap <A-j> :m '>+1<CR>gv=gv
 vmap <A-k> :m '<-2<CR>gv=gv
 
+" Add cursor/caret up/down with Ctrl + Alt + j/k
 nnoremap <C-A-j> <C-A-down>
 nnoremap <C-A-k> <C-A-up>
 

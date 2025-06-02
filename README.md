@@ -31,4 +31,17 @@ ln -s ~/.dotfiles/.zsh_history ~/.zsh_history
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.starship.toml ~/.config/starship.toml
 ln -s ~/.dotfiles/.ideavimrc ~/.ideavimrc # for Jetbrains
+ln -s ~/.dotfiles/.vimrc ~/.vimrc # for Vim, VS 2022
 ```
+
+## Set up Visual Studio 2022
+
+-   Go to Options > VsVim > Keyboard > Toggle those shortcuts:
+
+    -   `Ctrl + Alt + Down Arrow` to `VsVim`
+    -   `Ctrl + Alt + Up Arrow` to `VsVim`
+    -   `Ctrl + R` to `VsVim`
+
+-   Go to Options > Environment > Keyboard > Modify some shortcuts:
+    -   `Edit.Duplicate` to `Shift + Alt + J`
+    -   `Edit.InsertNextMatchingCaret` to `Ctrl + D`
