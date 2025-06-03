@@ -15,10 +15,11 @@ git clone https://github.com/lvb2104/dotfiles.git ~/.dotfiles
 ## Install bat, exa, zsh, oh-my-zsh
 
 ```bash
-sudo dnf install bat exa zsh
+sudo dnf install bat exa/eza zsh
 # https://ohmyz.sh/#install
 # https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file
 # https://github.com/zsh-users/zsh-syntax-highlighting/tree/master
+#
 ```
 
 ## There are better and less manual ways to do this
@@ -26,12 +27,10 @@ sudo dnf install bat exa zsh
 ## investigate install scripts and bootstrapping tools
 
 ```bash
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.zsh_history ~/.zsh_history
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.starship.toml ~/.config/starship.toml
-ln -s ~/.dotfiles/.ideavimrc ~/.ideavimrc # for Jetbrains
-ln -s ~/.dotfiles/.vimrc ~/.vimrc # for Vim, VS 2022
+ln -s ~/Code/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Code/dotfiles/starship.toml ~/.config/starship.toml
+ln -s ~/Code/dotfiles/.ideavimrc ~/.ideavimrc
+ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ```
 
 ## Set up Visual Studio 2022
