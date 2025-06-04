@@ -29,7 +29,7 @@ set scrolloff=10
 " Show partial command you type in the last line of the screen.
 set showcmd
 
------------------------------------------------------------------------
+" -----------------------------------------------------------------------
 
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
@@ -76,7 +76,7 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " Map the F3 key to toggle NERDTree open and close.
 nnoremap <F3> :NERDTreeToggle<cr>
 
-----------------------------------------------------------------------
+" ----------------------------------------------------------------------
 
 " Yank + flash highlight using visual mode
 vnoremap y y:call HighlightLastYank()<CR>

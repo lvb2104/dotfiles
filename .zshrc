@@ -6,7 +6,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set aliases
 alias ls="eza --icons --group-directories-first"
-alias cat="bat"
+alias cat="batcat"
 
 # Load nvm
 export NVM_DIR="$HOME/.nvm"
@@ -15,3 +15,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load starship prompt
 eval "$(starship init zsh)"
+
+# Configure path for dotnet
+export PATH=$PATH:$HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
