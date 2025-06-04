@@ -1,30 +1,30 @@
 # My dotfiles
 
-## Use SSH (if set up)
+## 1. Install on Linux
+
+### 1.1 Use SSH (if set up)
 
 ```bash
 git clone git@github.com:lvb2104/dotfiles.git ~/.dotfiles
 ```
 
-## Or use HTTPS and switch remotes later
+### 1.2 Or use HTTPS and switch remotes later
 
 ```bash
 git clone https://github.com/lvb2104/dotfiles.git ~/.dotfiles
 ```
 
-## Install bat, exa, zsh, oh-my-zsh
+## 2. Install bat, exa, zsh, oh-my-zsh, starship
 
 ```bash
 sudo dnf install bat exa/eza zsh
 # https://ohmyz.sh/#install
-# https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file
-# https://github.com/zsh-users/zsh-syntax-highlighting/tree/master
-#
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
+# command not found has already been installed
 ```
 
-## There are better and less manual ways to do this
-
-## investigate install scripts and bootstrapping tools
+## 3. Create symlinks to synced dotfiles
 
 ```bash
 ln -s ~/Code/dotfiles/.zshrc ~/.zshrc
@@ -33,7 +33,7 @@ ln -s ~/Code/dotfiles/.ideavimrc ~/.ideavimrc
 ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ```
 
-## Set up Visual Studio 2022
+## 4. Set up Visual Studio 2022 (optional)
 
 -   Go to Options > VsVim > Keyboard > Toggle those shortcuts:
 
