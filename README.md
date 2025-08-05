@@ -37,10 +37,11 @@ ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 
 -   Go to Options > VsVim > Keyboard > Toggle those shortcuts:
 
-    -   `Ctrl + Alt + Down Arrow` to `VsVim`
-    -   `Ctrl + Alt + Up Arrow` to `VsVim`
-    -   `Ctrl + R` to `VsVim`
+    -   Set `Ctrl + Alt + Down Arrow` to `VsVim`
+    -   Set `Ctrl + Alt + Up Arrow` to `VsVim`
+    -   Set `Ctrl + R` to `VsVim`
 
 -   Go to Options > Environment > Keyboard > Modify some shortcuts:
-    -   `Edit.Duplicate` to `Shift + Alt + J`
-    -   `Edit.InsertNextMatchingCaret` to `Ctrl + D`
+    -   Set `Edit.Duplicate` to `Shift + Alt + J`
+    -   Set `Edit.InsertNextMatchingCaret` to `Ctrl + D`
+    -   Remove `View.ObjectBrowser` from `Ctrl + Alt + J`
